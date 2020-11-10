@@ -9,18 +9,22 @@ function TodoFeature(props) {
     {
       id: 1,
       title: "Eat",
+      status: "new",
     },
     {
       id: 2,
       title: "Sleep",
+      status: "completed",
     },
     {
       id: 3,
       title: "Code",
+      status: "new",
     },
   ];
   return (
     <div>
+      <h1>Todos</h1>
       <h3>
         <TodoList todoList={todoList} />
       </h3>
