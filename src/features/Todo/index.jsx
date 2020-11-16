@@ -5,7 +5,7 @@ import TodoList from "./components/TodoList";
 TodoFeature.propTypes = {};
 //chứa dữ liệu nhưng không biết cách render
 function TodoFeature(props) {
-  const todoList = [
+  const inittodoList = [
     {
       id: 1,
       title: "Eat",
@@ -22,6 +22,7 @@ function TodoFeature(props) {
       status: "new",
     },
   ];
+  const [todoList, settodoList] = useState(inittodoList);
   return (
     <div>
       <h1>Todos</h1>
